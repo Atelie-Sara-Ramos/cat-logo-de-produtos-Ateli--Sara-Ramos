@@ -1,0 +1,2452 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Sara Ramos</title>
+    <style>
+        /* Base e Reset */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            background-color: #0d0d0d; 
+            color: #ffffff; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header Fixo Tipo App */
+        header { 
+            background-color: #1a1a1a; 
+            padding: 20px; 
+            position: sticky; 
+            top: 0; 
+            z-index: 100;
+            border-bottom: 2px solid #d4af37;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        header h1 { 
+            color: #d4af37; 
+            font-size: 1.4rem; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+        }
+        header p {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 5px;
+            letter-spacing: 1px;
+        }
+
+        /* Container Principal */
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Categorias */
+        .category {
+            margin-bottom: 40px;
+        }
+        .category-title {
+            color: #d4af37;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        /* Grid de Produtos */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 15px;
+        }
+
+        /* Card do Produto */
+        .product-card {
+            background-color: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease;
+        }
+        .product-card:active {
+            transform: scale(0.98);
+        }
+
+        /* Espaço para Foto (Placeholder) */
+        .img-placeholder {
+            background-color: #222;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #2a2a2a;
+        }
+        .img-placeholder i {
+            display: block;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        /* Informações do Produto */
+        .product-info {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+        .product-name {
+            font-size: 0.9rem;
+            color: #eaeaea;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        .product-price {
+            font-size: 1.1rem;
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        /* Botão visual de interesse */
+        .btn-interest {
+            display: block;
+            margin-top: 15px;
+            background-color: transparent;
+            color: #d4af37;
+            border: 1px solid #d4af37;
+            text-align: center;
+            padding: 8px 0;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+        .btn-interest:hover {
+            background-color: #d4af37;
+            color: #0d0d0d;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.85rem;
+            color: #666;
+            background-color: #111;
+            border-top: 1px solid #222;
+        }
+        footer span {
+            color: #d4af37;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sara Ramos</h1>
+        <p>Visagismo, Cor & Produtos</p>
+    </header>
+
+    <div class="container">
+
+        <div class="category">
+            <h2 class="category-title">THEROS THERAPY</h2>
+            <div class="product-grid">
+    
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara e Shampoo Curly kit 2/1</div>
+                        <div>
+                            <div class="product-price">R$ 120,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Curly 300ml</div>
+                        <div>
+                            <div class="product-price">R$ 55,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Curly 330g</div>
+                        <div>
+                            <div class="product-price">R$ 70,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Ativado de Cachos 500ml</div>
+                        <div>
+                            <div class="product-price">R$ 115,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Modelador de Cachos 500ml</div>
+                        <div>
+                            <div class="product-price">R$ 115,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Ativador e Modelador 2/1</div>
+                        <div>
+                            <div class="product-price">R$ 225,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Óleo Gloss UP 60ml</div>
+                        <div>
+                            <div class="product-price">R$ 120,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Naturalis Argila 500ml</div>
+                        <div>
+                            <div class="product-price">R$ 107,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Naturalis Argila 500ml</div>
+                        <div>
+                            <div class="product-price">R$ 107,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Tônico capilar Argila 100ml</div>
+                        <div>
+                            <div class="product-price">R$ 85,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Argila 3/1</div>
+                        <div>
+                            <div class="product-price">R$ 250,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+        <div class="category">
+            <h2 class="category-title">KAEDO</h2>
+            <div class="product-grid">
+    
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Ph Solution 2/1 Shampoo e Reconstrutor 250ml</div>
+                        <div>
+                            <div class="product-price">R$ 215,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Perfume Desert Rose 60ml</div>
+                        <div>
+                            <div class="product-price">R$ 150,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Perfume Desert Rose 15ml</div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Leavin Mk100 technology hair science 250ml</div>
+                        <div>
+                            <div class="product-price">R$ 195,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Curl Solution 150ml</div>
+                        <div>
+                            <div class="product-price">R$ 145,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">American Liss 250ml</div>
+                        <div>
+                            <div class="product-price">R$ 195,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Solution 60ml</div>
+                        <div>
+                            <div class="product-price">R$ 150,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Óleo Hora de Cachear 60ml</div>
+                        <div>
+                            <div class="product-price">R$ 135,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Sérum Princess Hair Night 60ml</div>
+                        <div>
+                            <div class="product-price">R$ 150,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Óleo de Argan 55ml</div>
+                        <div>
+                            <div class="product-price">R$ 145,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Calda Potencializadora Manjar dos Deuses 30ml</div>
+                        <div>
+                            <div class="product-price">R$ 89,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Mousse</div>
+                        <div>
+                            <div class="product-price">-</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Mega</div>
+                        <div>
+                            <div class="product-price">-</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Nanooil</div>
+                        <div>
+                            <div class="product-price">-</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Manjar dos Deuses 250g</div>
+                        <div>
+                            <div class="product-price">R$ 159,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Fluído Color Lock 250ml</div>
+                        <div>
+                            <div class="product-price">R$ 165,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Potencializador Carta na Manga 250ml</div>
+                        <div>
+                            <div class="product-price">R$ 165,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Fluído Sunglass 250ml</div>
+                        <div>
+                            <div class="product-price">R$ 165,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Microbioma 250ml</div>
+                        <div>
+                            <div class="product-price">R$ 120,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Condicionador Microbioma 250ml</div>
+                        <div>
+                            <div class="product-price">R$ 120,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Fluído Microbioma 60ml</div>
+                        <div>
+                            <div class="product-price">R$ 120,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Microbioma 3/1</div>
+                        <div>
+                            <div class="product-price">R$ 335,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+        <div class="category">
+            <h2 class="category-title">ECOSMETICOS</h2>
+            <div class="product-grid">
+    
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Plástica Capilar Ecos 3/1</div>
+                        <div>
+                            <div class="product-price">R$ 199,99</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Nutrition Ecos 3/1</div>
+                        <div>
+                            <div class="product-price">R$ 199,99</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+        <div class="category">
+            <h2 class="category-title">MIRRA</h2>
+            <div class="product-grid">
+    
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Condicionador Proteínas do Leite 270ml</div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Proteínas do Leite 270ml</div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Leavin Proteínas do Leite 180g</div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Proteínas do Leite 500ml</div>
+                        <div>
+                            <div class="product-price">R$ 130,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Proteínas do Leite 4/1</div>
+                        <div>
+                            <div class="product-price">R$ 330,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Nutrição Vegetal 270ml</div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Condicionador Nutrição Vegetal 270ml</div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Leavin Nutrição Vegetal 180g</div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Nutrição Vegetal 500g</div>
+                        <div>
+                            <div class="product-price">R$ 130,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Nutrição Vegetal 4/1</div>
+                        <div>
+                            <div class="product-price">R$ 330,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Queratina 270ml</div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Condicionador Queratina 270ml</div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Leavin Queratina 180g</div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Queratina 500g</div>
+                        <div>
+                            <div class="product-price">R$ 130,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Queratina 4/1</div>
+                        <div>
+                            <div class="product-price">R$ 330,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Ginkgo Biloba 270ml</div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Condicionador Ginkgo Biloba 270ml</div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Leavin Ginkgo Biloba 180g</div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Ginkgo Biloba 500g</div>
+                        <div>
+                            <div class="product-price">R$ 130,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Ginkgo Biloba 4/1</div>
+                        <div>
+                            <div class="product-price">R$ 330,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Matizador Blue Queratina 250g</div>
+                        <div>
+                            <div class="product-price">R$ 120,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Leavin Jojoba e Andiroba 180g</div>
+                        <div>
+                            <div class="product-price">R$ 95,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Jojoba e Andiroba 270ml</div>
+                        <div>
+                            <div class="product-price">R$ 90,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Condicionador Jojoba e Andiroba 270ml</div>
+                        <div>
+                            <div class="product-price">R$ 90,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Jojoba e Andiroba 250g</div>
+                        <div>
+                            <div class="product-price">R$ 125,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Jojoba e Andiroba 4/1</div>
+                        <div>
+                            <div class="product-price">R$ 385,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Intensificador de Brilho 120ml</div>
+                        <div>
+                            <div class="product-price">R$ 110,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Óleo Elixir Gold 30ml</div>
+                        <div>
+                            <div class="product-price">R$ 85,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Óleo Argan Oil 30ml</div>
+                        <div>
+                            <div class="product-price">R$ 85,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Óleo Bio Elixir 30ml</div>
+                        <div>
+                            <div class="product-price">R$ 85,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+        <div class="category">
+            <h2 class="category-title">MAISON VISAGE</h2>
+            <div class="product-grid">
+    
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Blond Absolut 270ml</div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Condicionador Blond Absolut 270 ml</div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Leavin Blond Absolut 140ml</div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Blond Absolut 200g</div>
+                        <div>
+                            <div class="product-price">R$ 115,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Blond Absolut 4/1</div>
+                        <div>
+                            <div class="product-price">R$ 400,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Minerals Vitamin 270ml</div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Condicionador Minerals Vitamin 270ml</div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Leavin Minerals Vitamins 140ml</div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Minerals Vitamins 200g</div>
+                        <div>
+                            <div class="product-price">R$ 115,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Minerals Vitamins 4/1</div>
+                        <div>
+                            <div class="product-price">R$ 400,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Ômega Complex 270ml</div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Condicionador Ômega Complex 270ml</div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Leavin Ômega Complex 140ml</div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Ômega Complex 200g</div>
+                        <div>
+                            <div class="product-price">R$ 115,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Ômega Complex 4/1</div>
+                        <div>
+                            <div class="product-price">R$ 400,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Fusion Córtex 270ml</div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Condicionador Fusion Córtex 270ml</div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Leavin Fusion Córtex 140ml</div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Fusion Córtex 200g</div>
+                        <div>
+                            <div class="product-price">R$ 115,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Fusion Córtex 4/1</div>
+                        <div>
+                            <div class="product-price">R$ 400,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+        <div class="category">
+            <h2 class="category-title">LÊ BAIN</h2>
+            <div class="product-grid">
+    
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Vitamina 330ml</div>
+                        <div>
+                            <div class="product-price">R$ 115,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Condicionador Vitamins 330ml</div>
+                        <div>
+                            <div class="product-price">R$ 115,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Leavin Vitamins 170ml</div>
+                        <div>
+                            <div class="product-price">R$ 115,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Vitamins 300g</div>
+                        <div>
+                            <div class="product-price">R$ 135,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Lê Bain Vitamins</div>
+                        <div>
+                            <div class="product-price">R$ 460,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Repairing 330ml</div>
+                        <div>
+                            <div class="product-price">R$ 115,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Condicionador Repairing 330ml</div>
+                        <div>
+                            <div class="product-price">R$ 115,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Leavin Repairing 170ml</div>
+                        <div>
+                            <div class="product-price">R$ 115,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Repairing 300g</div>
+                        <div>
+                            <div class="product-price">R$ 135,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Repairing</div>
+                        <div>
+                            <div class="product-price">R$ 460,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+        <div class="category">
+            <h2 class="category-title">BEMAXX</h2>
+            <div class="product-grid">
+    
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Day by Day 1L</div>
+                        <div>
+                            <div class="product-price">R$ 140,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Day by Day 1L</div>
+                        <div>
+                            <div class="product-price">R$ 140,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Day by Day 2/1</div>
+                        <div>
+                            <div class="product-price">R$ 250,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Cachos 1L</div>
+                        <div>
+                            <div class="product-price">R$ 150,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Cachos 1L</div>
+                        <div>
+                            <div class="product-price">R$ 150,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Cachos 2/1</div>
+                        <div>
+                            <div class="product-price">R$ 280,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Regenera</div>
+                        <div>
+                            <div class="product-price">R$ 150,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Regenera</div>
+                        <div>
+                            <div class="product-price">R$ 150,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Regenera 2/1</div>
+                        <div>
+                            <div class="product-price">R$ 280,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Magic Cream 260ml</div>
+                        <div>
+                            <div class="product-price">R$ 145,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Defriz Time 260ml</div>
+                        <div>
+                            <div class="product-price">R$ 140,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Perfume for my hair 60ml</div>
+                        <div>
+                            <div class="product-price">R$ 140,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Reparador de pontas for my hair 60ml</div>
+                        <div>
+                            <div class="product-price">R$ 130,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Ampola Néctar Magic 20ml</div>
+                        <div>
+                            <div class="product-price">R$ 50,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Cristall Repair Néctar 30ml</div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Liso Leve Solto 3/1</div>
+                        <div>
+                            <div class="product-price">R$ 190,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Nutrição</div>
+                        <div>
+                            <div class="product-price">R$ 65,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Leavin Nutrição 300ml</div>
+                        <div>
+                            <div class="product-price">R$ 65,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Nutrição 300g</div>
+                        <div>
+                            <div class="product-price">R$ 80,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Nutrição 3/1</div>
+                        <div>
+                            <div class="product-price">R$ 190,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Shampoo Retitution Carbon 300ml</div>
+                        <div>
+                            <div class="product-price">R$ 65,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Leavin Retitution Carbon 300ml</div>
+                        <div>
+                            <div class="product-price">R$ 65,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Retitution Carbon 300g</div>
+                        <div>
+                            <div class="product-price">R$ 80,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Retitution Carbon 3/1</div>
+                        <div>
+                            <div class="product-price">R$ 190,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Matizadora Absolut Blond Néctar 300g</div>
+                        <div>
+                            <div class="product-price">R$ 105,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+        <div class="category">
+            <h2 class="category-title">NATYLLA</h2>
+            <div class="product-grid">
+    
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit pós progressiva 3/1</div>
+                        <div>
+                            <div class="product-price">R$ 185,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Banho de Ouro 300g</div>
+                        <div>
+                            <div class="product-price">R$ 85,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Cronograma Capilar Lunática 3/1</div>
+                        <div>
+                            <div class="product-price">R$ 240,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Lunática 300g</div>
+                        <div>
+                            <div class="product-price">R$ 85,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Leavin Reposição de Carbono 300ml</div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Reposição de Carbono 300g</div>
+                        <div>
+                            <div class="product-price">R$ 85,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Leavin Hidra Revit 300ml</div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Máscara Hidra Revit 300g</div>
+                        <div>
+                            <div class="product-price">R$ 85,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+        <div class="category">
+            <h2 class="category-title">HOKA</h2>
+            <div class="product-grid">
+    
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Cronograma Capilar 3/1</div>
+                        <div>
+                            <div class="product-price">R$ 200,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Óleo Hoka Poliplus 30ml</div>
+                        <div>
+                            <div class="product-price">R$ 80,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+        <div class="category">
+            <h2 class="category-title">KIONE</h2>
+            <div class="product-grid">
+    
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Pós Coloração 3/1</div>
+                        <div>
+                            <div class="product-price">A definir</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit Reconstrução 3/1</div>
+                        <div>
+                            <div class="product-price">A definir</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kit 2/1 Morango e Pitaya</div>
+                        <div>
+                            <div class="product-price">R$ 85,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+        <div class="category">
+            <h2 class="category-title">TRUSS</h2>
+            <div class="product-grid">
+    
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Uso Obrigatório 260ml</div>
+                        <div>
+                            <div class="product-price">R$ 118,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Night SPA 250ml</div>
+                        <div>
+                            <div class="product-price">R$ 152,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Condicionador Miracle 300ml</div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+        <div class="category">
+            <h2 class="category-title">VARIADAS</h2>
+            <div class="product-grid">
+    
+                <div class="product-card">
+                    <div class="img-placeholder">
+                        <div>
+                            <i>📸</i>
+                            <span>Inserir Foto</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Açaí Care 300g</div>
+                        <div>
+                            <div class="product-price">R$ 84,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+    </div>
+
+    <footer>
+        <p>Ateliê da Beleza | Governador Valadares, MG</p>
+        <p>Instagram: <span>@sararamosateliedabeleza</span></p>
+    </footer>
+
+</body>
+</html>
