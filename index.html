@@ -63,7 +63,7 @@
         /* Grid de Produtos */
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             gap: 15px;
         }
 
@@ -85,8 +85,8 @@
         .product-image {
             width: 100%;
             aspect-ratio: 1 / 1;
-            object-fit: cover; /* Garante que a foto preencha o quadrado sem distorcer */
-            background-color: #222; /* Fundo caso a imagem demore a carregar ou dê erro */
+            object-fit: cover;
+            background-color: #222;
             border-bottom: 1px solid #2a2a2a;
         }
 
@@ -101,8 +101,15 @@
         .product-name {
             font-size: 0.9rem;
             color: #eaeaea;
-            margin-bottom: 15px;
+            margin-bottom: 8px;
             line-height: 1.4;
+            font-weight: bold;
+        }
+        .product-desc {
+            font-size: 0.75rem;
+            color: #aaa;
+            margin-bottom: 12px;
+            line-height: 1.3;
         }
         .product-price {
             font-size: 1.1rem;
@@ -113,7 +120,7 @@
         /* Botão visual de interesse */
         .btn-interest {
             display: block;
-            margin-top: 15px;
+            margin-top: 12px;
             background-color: transparent;
             color: #d4af37;
             border: 1px solid #d4af37;
@@ -153,1146 +160,1210 @@
     </header>
 
     <div class="container">
+        
+        <!-- CATEGORIA: KITS E COMBOS -->
         <div class="category">
             <h2 class="category-title">Kits e Combos</h2>
             <div class="product-grid">
 
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/theros-therapy-mascara-e-shampoo-curly-kit-2-1.jpg" alt="Máscara e Shampoo Curly kit 2/1 (THEROS THERAPY)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100725.jpg" alt="Máscara Curly 330g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Máscara e Shampoo Curly kit 2/1 (THEROS THERAPY)</div>
                         <div>
-                            <div class="product-price">R$ 120,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                            <div class="product-name">Máscara Curly 330g (THEROS THERAPY)</div>
+                            <div class="product-desc">Hidratação intensiva para modelar, nutrir e dar definição perfeita aos cachos.</div>
                         </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/theros-therapy-kit-ativador-e-modelador-2-1.jpg" alt="Kit Ativador e Modelador 2/1 (THEROS THERAPY)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Ativador e Modelador 2/1 (THEROS THERAPY)</div>
-                        <div>
-                            <div class="product-price">R$ 225,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/theros-therapy-kit-argila-3-1.jpg" alt="Kit Argila 3/1 (THEROS THERAPY)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Argila 3/1 (THEROS THERAPY)</div>
-                        <div>
-                            <div class="product-price">R$ 250,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-kit-ph-solution-2-1-shampoo-e-reconstrutor-250ml.jpg" alt="Kit Ph Solution 2/1 Shampoo e Reconstrutor 250ml (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Ph Solution 2/1 Shampoo e Reconstrutor 250ml (KAEDO)</div>
-                        <div>
-                            <div class="product-price">R$ 215,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-kit-microbioma-3-1.jpg" alt="Kit Microbioma 3/1 (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Microbioma 3/1 (KAEDO)</div>
-                        <div>
-                            <div class="product-price">R$ 335,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/ecosmeticos-kit-plastica-capilar-ecos-3-1.jpg" alt="Kit Plástica Capilar Ecos 3/1 (ECOSMETICOS)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Plástica Capilar Ecos 3/1 (ECOSMETICOS)</div>
-                        <div>
-                            <div class="product-price">R$ 199,99</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/ecosmeticos-kit-nutrition-ecos-3-1.jpg" alt="Kit Nutrition Ecos 3/1 (ECOSMETICOS)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Nutrition Ecos 3/1 (ECOSMETICOS)</div>
-                        <div>
-                            <div class="product-price">R$ 199,99</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-kit-proteinas-do-leite-4-1.jpg" alt="Kit Proteínas do Leite 4/1 (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Proteínas do Leite 4/1 (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 330,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-kit-nutricao-vegetal-4-1.jpg" alt="Kit Nutrição Vegetal 4/1 (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Nutrição Vegetal 4/1 (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 330,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-kit-queratina-4-1.jpg" alt="Kit Queratina 4/1 (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Queratina 4/1 (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 330,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-kit-ginkgo-biloba-4-1.jpg" alt="Kit Ginkgo Biloba 4/1 (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Ginkgo Biloba 4/1 (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 330,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-kit-jojoba-e-andiroba-4-1.jpg" alt="Kit Jojoba e Andiroba 4/1 (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Jojoba e Andiroba 4/1 (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 385,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-kit-blond-absolut-4-1.jpg" alt="Kit Blond Absolut 4/1 (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Blond Absolut 4/1 (MAISON VISAGE)</div>
-                        <div>
-                            <div class="product-price">R$ 400,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-kit-minerals-vitamins-4-1.jpg" alt="Kit Minerals Vitamins 4/1 (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Minerals Vitamins 4/1 (MAISON VISAGE)</div>
-                        <div>
-                            <div class="product-price">R$ 400,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-kit-omega-complex-4-1.jpg" alt="Kit Ômega Complex 4/1 (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Ômega Complex 4/1 (MAISON VISAGE)</div>
-                        <div>
-                            <div class="product-price">R$ 400,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-kit-fusion-cortex-4-1.jpg" alt="Kit Fusion Córtex 4/1 (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Fusion Córtex 4/1 (MAISON VISAGE)</div>
-                        <div>
-                            <div class="product-price">R$ 400,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/le-bain-kit-le-bain-vitamins.jpg" alt="Kit Lê Bain Vitamins (LÊ BAIN)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Lê Bain Vitamins (LÊ BAIN)</div>
-                        <div>
-                            <div class="product-price">R$ 460,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/le-bain-kit-repairing.jpg" alt="Kit Repairing (LÊ BAIN)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Repairing (LÊ BAIN)</div>
-                        <div>
-                            <div class="product-price">R$ 460,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-kit-day-by-day-2-1.jpg" alt="Kit Day by Day 2/1 (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Day by Day 2/1 (BEMAXX)</div>
-                        <div>
-                            <div class="product-price">R$ 250,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-kit-cachos-2-1.jpg" alt="Kit Cachos 2/1 (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Cachos 2/1 (BEMAXX)</div>
-                        <div>
-                            <div class="product-price">R$ 280,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-kit-regenera-2-1.jpg" alt="Kit Regenera 2/1 (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Regenera 2/1 (BEMAXX)</div>
-                        <div>
-                            <div class="product-price">R$ 280,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-kit-liso-leve-solto-3-1.jpg" alt="Kit Liso Leve Solto 3/1 (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Liso Leve Solto 3/1 (BEMAXX)</div>
-                        <div>
-                            <div class="product-price">R$ 190,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-kit-nutricao-3-1.jpg" alt="Kit Nutrição 3/1 (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Nutrição 3/1 (BEMAXX)</div>
-                        <div>
-                            <div class="product-price">R$ 190,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-kit-retitution-carbon-3-1.jpg" alt="Kit Retitution Carbon 3/1 (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Retitution Carbon 3/1 (BEMAXX)</div>
-                        <div>
-                            <div class="product-price">R$ 190,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/natylla-kit-pos-progressiva-3-1.jpg" alt="Kit pós progressiva 3/1 (NATYLLA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit pós progressiva 3/1 (NATYLLA)</div>
-                        <div>
-                            <div class="product-price">R$ 185,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/natylla-kit-cronograma-capilar-lunatica-3-1.jpg" alt="Kit Cronograma Capilar Lunática 3/1 (NATYLLA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Cronograma Capilar Lunática 3/1 (NATYLLA)</div>
-                        <div>
-                            <div class="product-price">R$ 240,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/hoka-kit-cronograma-capilar-3-1.jpg" alt="Kit Cronograma Capilar 3/1 (HOKA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Cronograma Capilar 3/1 (HOKA)</div>
-                        <div>
-                            <div class="product-price">R$ 200,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kione-kit-pos-coloracao-3-1.jpg" alt="Kit Pós Coloração 3/1 (KIONE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Pós Coloração 3/1 (KIONE)</div>
-                        <div>
-                            <div class="product-price">A definir</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kione-kit-reconstrucao-3-1.jpg" alt="Kit Reconstrução 3/1 (KIONE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit Reconstrução 3/1 (KIONE)</div>
-                        <div>
-                            <div class="product-price">A definir</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kione-kit-2-1-morango-e-pitaya.jpg" alt="Kit 2/1 Morango e Pitaya (KIONE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Kit 2/1 Morango e Pitaya (KIONE)</div>
-                        <div>
-                            <div class="product-price">R$ 85,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="category">
-            <h2 class="category-title">Shampoos e Condicionadores</h2>
-            <div class="product-grid">
-
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/theros-therapy-shampoo-curly-300ml.jpg" alt="Shampoo Curly 300ml (THEROS THERAPY)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Curly 300ml (THEROS THERAPY)</div>
-                        <div>
-                            <div class="product-price">R$ 55,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/theros-therapy-shampoo-naturalis-argila-500ml.jpg" alt="Shampoo Naturalis Argila 500ml (THEROS THERAPY)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Naturalis Argila 500ml (THEROS THERAPY)</div>
-                        <div>
-                            <div class="product-price">R$ 107,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-shampoo-microbioma-250ml.jpg" alt="Shampoo Microbioma 250ml (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Microbioma 250ml (KAEDO)</div>
-                        <div>
-                            <div class="product-price">R$ 120,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-condicionador-microbioma-250ml.jpg" alt="Condicionador Microbioma 250ml (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Condicionador Microbioma 250ml (KAEDO)</div>
-                        <div>
-                            <div class="product-price">R$ 120,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-condicionador-proteinas-do-leite-270ml.jpg" alt="Condicionador Proteínas do Leite 270ml (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Condicionador Proteínas do Leite 270ml (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 75,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-shampoo-proteinas-do-leite-270ml.jpg" alt="Shampoo Proteínas do Leite 270ml (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Proteínas do Leite 270ml (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 75,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-shampoo-nutricao-vegetal-270ml.jpg" alt="Shampoo Nutrição Vegetal 270ml (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Nutrição Vegetal 270ml (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 75,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-condicionador-nutricao-vegetal-270ml.jpg" alt="Condicionador Nutrição Vegetal 270ml (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Condicionador Nutrição Vegetal 270ml (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 75,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-shampoo-queratina-270ml.jpg" alt="Shampoo Queratina 270ml (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Queratina 270ml (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 75,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-condicionador-queratina-270ml.jpg" alt="Condicionador Queratina 270ml (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Condicionador Queratina 270ml (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 75,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-shampoo-ginkgo-biloba-270ml.jpg" alt="Shampoo Ginkgo Biloba 270ml (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Ginkgo Biloba 270ml (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 75,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-condicionador-ginkgo-biloba-270ml.jpg" alt="Condicionador Ginkgo Biloba 270ml (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Condicionador Ginkgo Biloba 270ml (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 75,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-shampoo-jojoba-e-andiroba-270ml.jpg" alt="Shampoo Jojoba e Andiroba 270ml (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Jojoba e Andiroba 270ml (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 90,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-condicionador-jojoba-e-andiroba-270ml.jpg" alt="Condicionador Jojoba e Andiroba 270ml (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Condicionador Jojoba e Andiroba 270ml (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 90,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-shampoo-blond-absolut-270ml.jpg" alt="Shampoo Blond Absolut 270ml (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Blond Absolut 270ml (MAISON VISAGE)</div>
-                        <div>
-                            <div class="product-price">R$ 100,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-condicionador-blond-absolut-270-ml.jpg" alt="Condicionador Blond Absolut 270 ml (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Condicionador Blond Absolut 270 ml (MAISON VISAGE)</div>
-                        <div>
-                            <div class="product-price">R$ 100,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-shampoo-minerals-vitamin-270ml.jpg" alt="Shampoo Minerals Vitamin 270ml (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Minerals Vitamin 270ml (MAISON VISAGE)</div>
-                        <div>
-                            <div class="product-price">R$ 100,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-condicionador-minerals-vitamin-270ml.jpg" alt="Condicionador Minerals Vitamin 270ml (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Condicionador Minerals Vitamin 270ml (MAISON VISAGE)</div>
-                        <div>
-                            <div class="product-price">R$ 100,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-shampoo-omega-complex-270ml.jpg" alt="Shampoo Ômega Complex 270ml (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Ômega Complex 270ml (MAISON VISAGE)</div>
-                        <div>
-                            <div class="product-price">R$ 100,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-condicionador-omega-complex-270ml.jpg" alt="Condicionador Ômega Complex 270ml (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Condicionador Ômega Complex 270ml (MAISON VISAGE)</div>
-                        <div>
-                            <div class="product-price">R$ 100,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-shampoo-fusion-cortex-270ml.jpg" alt="Shampoo Fusion Córtex 270ml (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Fusion Córtex 270ml (MAISON VISAGE)</div>
-                        <div>
-                            <div class="product-price">R$ 100,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-condicionador-fusion-cortex-270ml.jpg" alt="Condicionador Fusion Córtex 270ml (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Condicionador Fusion Córtex 270ml (MAISON VISAGE)</div>
-                        <div>
-                            <div class="product-price">R$ 100,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/le-bain-shampoo-vitamina-330ml.jpg" alt="Shampoo Vitamina 330ml (LÊ BAIN)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Vitamina 330ml (LÊ BAIN)</div>
-                        <div>
-                            <div class="product-price">R$ 115,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/le-bain-condicionador-vitamins-330ml.jpg" alt="Condicionador Vitamins 330ml (LÊ BAIN)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Condicionador Vitamins 330ml (LÊ BAIN)</div>
-                        <div>
-                            <div class="product-price">R$ 115,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/le-bain-shampoo-repairing-330ml.jpg" alt="Shampoo Repairing 330ml (LÊ BAIN)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Repairing 330ml (LÊ BAIN)</div>
-                        <div>
-                            <div class="product-price">R$ 115,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/le-bain-condicionador-repairing-330ml.jpg" alt="Condicionador Repairing 330ml (LÊ BAIN)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Condicionador Repairing 330ml (LÊ BAIN)</div>
-                        <div>
-                            <div class="product-price">R$ 115,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-shampoo-day-by-day-1l.jpg" alt="Shampoo Day by Day 1L (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Day by Day 1L (BEMAXX)</div>
-                        <div>
-                            <div class="product-price">R$ 140,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-shampoo-cachos-1l.jpg" alt="Shampoo Cachos 1L (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Cachos 1L (BEMAXX)</div>
-                        <div>
-                            <div class="product-price">R$ 150,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-shampoo-regenera.jpg" alt="Shampoo Regenera (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Regenera (BEMAXX)</div>
-                        <div>
-                            <div class="product-price">R$ 150,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-shampoo-nutricao.jpg" alt="Shampoo Nutrição (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Nutrição (BEMAXX)</div>
-                        <div>
-                            <div class="product-price">R$ 65,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-shampoo-retitution-carbon-300ml.jpg" alt="Shampoo Retitution Carbon 300ml (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Shampoo Retitution Carbon 300ml (BEMAXX)</div>
-                        <div>
-                            <div class="product-price">R$ 65,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/truss-condicionador-miracle-300ml.jpg" alt="Condicionador Miracle 300ml (TRUSS)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Condicionador Miracle 300ml (TRUSS)</div>
-                        <div>
-                            <div class="product-price">R$ 100,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="category">
-            <h2 class="category-title">Máscaras de Tratamento</h2>
-            <div class="product-grid">
-
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/theros-therapy-mascara-curly-330g.jpg" alt="Máscara Curly 330g (THEROS THERAPY)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Máscara Curly 330g (THEROS THERAPY)</div>
                         <div>
                             <div class="product-price">R$ 70,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/theros-therapy-mascara-naturalis-argila-500ml.jpg" alt="Máscara Naturalis Argila 500ml (THEROS THERAPY)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100835.jpg" alt="Ativador de Cachos 500ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Máscara Naturalis Argila 500ml (THEROS THERAPY)</div>
+                        <div>
+                            <div class="product-name">Ativador de Cachos 500ml (THEROS THERAPY)</div>
+                            <div class="product-desc">Modela e ativa os cachos com fixação flexível, brilho intenso e proteção térmica.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 115,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100836.jpg" alt="Modelador de Cachos 500ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Modelador de Cachos 500ml (THEROS THERAPY)</div>
+                            <div class="product-desc">Modela as ondas com fixação leve e movimento natural.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 115,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100933.jpg" alt="Kit Ph Solution 2/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Ph Solution 2/1 Shampoo e Reconstrutor 250ml (KAEDO)</div>
+                            <div class="product-desc">Equilibra o pH dos fios quimicamente tratados e promove reconstrução imediata.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 215,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100932.jpg" alt="Kit Microbioma 3/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Microbioma 3/1 (Shampoo, Condicionador, Fluído) (KAEDO)</div>
+                            <div class="product-desc">Protege e restaura a saúde do couro cabeludo, fortalecendo a raiz dos cabelos.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 335,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100935.jpg" alt="Kit Plástica Capilar Ecos 3/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Plástica Capilar Ecos 3/1 (ECOSMETICOS)</div>
+                            <div class="product-desc">Efeito disciplinante intenso, alinhamento térmico e redução visível do volume.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 199,99</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100838.jpg" alt="Kit Nutrition Ecos 3/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Nutrition Ecos 3/1 (ECOSMETICOS)</div>
+                            <div class="product-desc">Nutrição profunda para cabelos ressecados, devolvendo o toque sedoso e maleabilidade.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 199,99</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100902.jpg" alt="Kit Proteínas do Leite 4/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Proteínas do Leite 4/1 (MIRRA)</div>
+                            <div class="product-desc">Restauração diária com alto teor proteico, indicada para fios opacos e quebradiços.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 330,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100900.jpg" alt="Kit Nutrição Vegetal 4/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Nutrição Vegetal 4/1 (MIRRA)</div>
+                            <div class="product-desc">Nutrição natural rica em óleos vegetais para nutrição intensa e brilho espelhado.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 330,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100891.jpg" alt="Kit Queratina 4/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Queratina 4/1 (MIRRA)</div>
+                            <div class="product-desc">Reposição de massa capilar ideal para cabelos danificados por processos químicos.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 330,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100892.jpg" alt="Kit Ginkgo Biloba 4/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Ginkgo Biloba 4/1 (MIRRA)</div>
+                            <div class="product-desc">Ação antioxidante e estimulante, ideal para revitalização e saúde dos fios.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 330,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100832.jpg" alt="Kit Jojoba e Andiroba 4/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Jojoba e Andiroba 4/1 (MIRRA)</div>
+                            <div class="product-desc">Controle absoluto de volume e hidratação profunda para cabelos rebeldes.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 385,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100914.jpg" alt="Kit Blond Absolut 4/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Blond Absolut 4/1 (MAISON VISAGE)</div>
+                            <div class="product-desc">Matização profissional e fortalecimento completo para cabelos louros ou grisalhos.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 400,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100910.jpg" alt="Kit Minerals Vitamins 4/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Minerals Vitamins 4/1 (MAISON VISAGE)</div>
+                            <div class="product-desc">Reposição de vitaminas e minerais essenciais para a vitalidade capilar.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 400,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100915.jpg" alt="Kit Ômega Complex 4/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Ômega Complex 4/1 (MAISON VISAGE)</div>
+                            <div class="product-desc">Nutrição avançada com ácidos graxos para elasticidade e proteção dos fios.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 400,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100951.png" alt="Kit Fusion Córtex 4/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Fusion Córtex 4/1 (MAISON VISAGE)</div>
+                            <div class="product-desc">Reconstrução profunda que age diretamente no córtex do cabelo danificado.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 400,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100833.jpg" alt="Kit Lê Bain Vitamins" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Lê Bain Vitamins (LÊ BAIN)</div>
+                            <div class="product-desc">Banho de vitaminas para fortalecimento e crescimento saudável dos cabelos.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 460,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100917.jpg" alt="Kit Repairing" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Repairing (LÊ BAIN)</div>
+                            <div class="product-desc">Reparação intensiva para cabelos extremamente danificados e quebradiços.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 460,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100853.jpg" alt="Kit Day by Day 2/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Day by Day 2/1 (BEMAXX)</div>
+                            <div class="product-desc">Manutenção diária leve e hidratante para todos os tipos de cabelo.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 250,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100851.jpg" alt="Kit Cachos 2/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Cachos 2/1 (BEMAXX)</div>
+                            <div class="product-desc">Definição máxima, maciez e controle duradouro para cabelos cacheados e crespos.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 280,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100906.jpg" alt="Kit Regenera 2/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Regenera 2/1 (BEMAXX)</div>
+                            <div class="product-desc">Regeneração capilar avançada para fios fragilizados por químicas sucessivas.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 280,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100820.jpg" alt="Kit Liso Leve Solto 3/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Liso Leve Solto 3/1 (BEMAXX)</div>
+                            <div class="product-desc">Prolonga o efeito liso, controla o frizz e garante balanço natural aos cabelos.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 190,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100858.jpg" alt="Kit Nutrição 3/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Nutrição 3/1 (BEMAXX)</div>
+                            <div class="product-desc">Devolve os lipídios essenciais, combatendo o ressecamento e as pontas duplas.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 190,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100819.jpg" alt="Kit Retitution Carbon 3/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Retitution Carbon 3/1 (BEMAXX)</div>
+                            <div class="product-desc">Reposição de carbono para máxima elasticidade e força capilar.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 190,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/2dec97e6-e8d4-430b-9e10-193a5fb4786e" alt="Kit pós progressiva 3/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit pós progressiva 3/1 (NATYLLA)</div>
+                            <div class="product-desc">Manutenção e prolongamento do efeito liso com hidratação equilibrada.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 185,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100817.jpg" alt="Kit Cronograma Capilar Lunática 3/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Cronograma Capilar Lunática 3/1 (Máscaras) (NATYLLA)</div>
+                            <div class="product-desc">Tratamento completo alternando hidratação, nutrição e reconstrução.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 240,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100789.jpg" alt="Kit Cronograma Capilar 3/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Cronograma Capilar 3/1 (HOKA)</div>
+                            <div class="product-desc">Cronograma profissional para recuperação total da saúde e brilho dos fios.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 200,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100879.jpg" alt="Kit Pós Coloração 3/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Pós Coloração 3/1 (KIONE)</div>
+                            <div class="product-desc">Proteção da cor, selagem das cutículas e brilho prolongado para cabelos tingidos.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">A definir</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100878.jpg" alt="Kit Reconstrução 3/1" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Kit Reconstrução 3/1 (KIONE)</div>
+                            <div class="product-desc">Recuperação estrutural profunda para cabelos severamente danificados.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">A definir</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CATEGORIA: SHAMPOOS E CONDICIONADORES -->
+        <div class="category">
+            <h2 class="category-title">Shampoos e Condicionadores</h2>
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <img src="img/100724.jpg" alt="Shampoo Curly 300ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Shampoo Curly 300ml (THEROS THERAPY)</div>
+                            <div class="product-desc">Limpeza suave que respeita a curvatura dos cachos sem ressecar.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 55,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100812.jpg" alt="Shampoo Naturalis Argila 500ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Shampoo Naturalis Argila 500ml (THEROS THERAPY)</div>
+                            <div class="product-desc">Purifica o couro cabeludo removendo impurezas e oleosidade excessiva.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 107,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-mascara-manjar-dos-deuses-250g.jpg" alt="Máscara Manjar dos Deuses 250g (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100875.jpg" alt="Shampoo Microbioma 250ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Máscara Manjar dos Deuses 250g (KAEDO)</div>
                         <div>
-                            <div class="product-price">R$ 159,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                            <div class="product-name">Shampoo Microbioma 250ml (KAEDO)</div>
+                            <div class="product-desc">Mantém o equilíbrio da flora do couro cabeludo, prevenindo irritações.</div>
                         </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-mascara-proteinas-do-leite-500ml.jpg" alt="Máscara Proteínas do Leite 500ml (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Máscara Proteínas do Leite 500ml (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 130,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-mascara-nutricao-vegetal-500g.jpg" alt="Máscara Nutrição Vegetal 500g (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Máscara Nutrição Vegetal 500g (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 130,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-mascara-queratina-500g.jpg" alt="Máscara Queratina 500g (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Máscara Queratina 500g (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 130,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-mascara-ginkgo-biloba-500g.jpg" alt="Máscara Ginkgo Biloba 500g (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Máscara Ginkgo Biloba 500g (MIRRA)</div>
-                        <div>
-                            <div class="product-price">R$ 130,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-matizador-blue-queratina-250g.jpg" alt="Matizador Blue Queratina 250g (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Matizador Blue Queratina 250g (MIRRA)</div>
                         <div>
                             <div class="product-price">R$ 120,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-mascara-jojoba-e-andiroba-250g.jpg" alt="Máscara Jojoba e Andiroba 250g (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100876.jpg" alt="Condicionador Microbioma 250ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Máscara Jojoba e Andiroba 250g (MIRRA)</div>
                         <div>
-                            <div class="product-price">R$ 125,00</div>
+                            <div class="product-name">Condicionador Microbioma 250ml (KAEDO)</div>
+                            <div class="product-desc">Desembaraça suavemente e sela as cutículas, preservando o microbioma capilar.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 120,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-mascara-blond-absolut-200g.jpg" alt="Máscara Blond Absolut 200g (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100895.jpg" alt="Condicionador Proteínas do Leite 270ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Máscara Blond Absolut 200g (MAISON VISAGE)</div>
+                        <div>
+                            <div class="product-name">Condicionador Proteínas do Leite 270ml (MIRRA)</div>
+                            <div class="product-desc">Nutrição diária com proteínas que conferem maciez e brilho imediato.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100894.jpg" alt="Shampoo Proteínas do Leite 270ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Shampoo Proteínas do Leite 270ml (MIRRA)</div>
+                            <div class="product-desc">Limpeza nutritiva que prepara os fios para tratamentos de reconstrução leve.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100901.jpg" alt="Shampoo Nutrição Vegetal 270ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Shampoo Nutrição Vegetal 270ml (MIRRA)</div>
+                            <div class="product-desc">Higieniza de forma nutritiva com extratos vegetais puros.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100899.jpg" alt="Condicionador Nutrição Vegetal 270ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Condicionador Nutrição Vegetal 270ml (MIRRA)</div>
+                            <div class="product-desc">Sela as cutículas com óleos vegetais, garantindo penteabilidade e brilho.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100890.jpg" alt="Shampoo Queratina 270ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Shampoo Queratina 270ml (MIRRA)</div>
+                            <div class="product-desc">Prepara a fibra capilar danificada para a absorção máxima de queratina.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100889.jpg" alt="Condicionador Queratina 270ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Condicionador Queratina 270ml (MIRRA)</div>
+                            <div class="product-desc">Auxilia na reposição de queratina e na recuperação de cabelos quebradiços.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100884.jpg" alt="Shampoo Ginkgo Biloba 270ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Shampoo Ginkgo Biloba 270ml (MIRRA)</div>
+                            <div class="product-desc">Estimula a microcirculação do couro cabeludo e revitaliza os fios opacos.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100945.jpg" alt="Condicionador Ginkgo Biloba 270ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Condicionador Ginkgo Biloba 270ml (MIRRA)</div>
+                            <div class="product-desc">Proporciona emoliência e vitalidade prolongada aos cabelos.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100831.jpg" alt="Shampoo Jojoba e Andiroba 270ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Shampoo Jojoba e Andiroba 270ml (MIRRA)</div>
+                            <div class="product-desc">Limpeza hidratante para controle de volume em cabelos ressecados.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 90,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100830.jpg" alt="Condicionador Jojoba e Andiroba 270ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Condicionador Jojoba e Andiroba 270ml (MIRRA)</div>
+                            <div class="product-desc">Ação antifrizz e controle intenso de volume com óleos naturais.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 90,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100913.jpg" alt="Shampoo Blond Absolut 270ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Shampoo Blond Absolut 270ml (MAISON VISAGE)</div>
+                            <div class="product-desc">Inicia a neutralização de tons indesejados enquanto limpa com suavidade.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100912.jpg" alt="Condicionador Blond Absolut 270 ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Condicionador Blond Absolut 270 ml (MAISON VISAGE)</div>
+                            <div class="product-desc">Hidrata e sela os fios loiros, mantendo o tom platinado luminoso.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100909.jpg" alt="Shampoo Minerals Vitamin 270ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Shampoo Minerals Vitamin 270ml (MAISON VISAGE)</div>
+                            <div class="product-desc">Revitaliza o couro cabeludo e os fios com minerais essenciais.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100908.jpg" alt="Condicionador Minerals Vitamin 270ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Condicionador Minerals Vitamin 270ml (MAISON VISAGE)</div>
+                            <div class="product-desc">Nutre e desembaraça, devolvendo a leveza e o brilho natural.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100848.jpg" alt="Shampoo Ômega Complex 270ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Shampoo Ômega Complex 270ml (MAISON VISAGE)</div>
+                            <div class="product-desc">Higienização rica em ômegas para cabelos ressecados e sem vida.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100949.jpg" alt="Condicionador Ômega Complex 270ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Condicionador Ômega Complex 270ml (MAISON VISAGE)</div>
+                            <div class="product-desc">Promove emoliência imediata e restauração da barreira lipídica.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100797.jpg" alt="Shampoo Fusion Córtex 270ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Shampoo Fusion Córtex 270ml (MAISON VISAGE)</div>
+                            <div class="product-desc">Prepara a estrutura interna dos fios fragilizados para tratamentos profundos.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100826.jpg" alt="Shampoo Vitamina 330ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Shampoo Vitamina 330ml (LÊ BAIN)</div>
+                            <div class="product-desc">Shampoo vitamínico que estimula a força e o crescimento dos fios.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 115,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-mascara-minerals-vitamins-200g.jpg" alt="Máscara Minerals Vitamins 200g (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100825.jpg" alt="Condicionador Vitamins 330ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Máscara Minerals Vitamins 200g (MAISON VISAGE)</div>
+                        <div>
+                            <div class="product-name">Condicionador Vitamins 330ml (LÊ BAIN)</div>
+                            <div class="product-desc">Complementa a nutrição vitamínica, facilitando o desembaraço.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 115,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-mascara-omega-complex-200g.jpg" alt="Máscara Ômega Complex 200g (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100916.jpg" alt="Shampoo Repairing 330ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Máscara Ômega Complex 200g (MAISON VISAGE)</div>
+                        <div>
+                            <div class="product-name">Shampoo Repairing 330ml (LÊ BAIN)</div>
+                            <div class="product-desc">Limpeza reparadora que inicia o processo de recuperação de fios danificados.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 115,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-mascara-fusion-cortex-200g.jpg" alt="Máscara Fusion Córtex 200g (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100823.jpg" alt="Condicionador Repairing 330ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Máscara Fusion Córtex 200g (MAISON VISAGE)</div>
+                        <div>
+                            <div class="product-name">Condicionador Repairing 330ml (LÊ BAIN)</div>
+                            <div class="product-desc">Sela as cutículas danificadas e devolve a resistência capilar.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 115,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/le-bain-mascara-vitamins-300g.jpg" alt="Máscara Vitamins 300g (LÊ BAIN)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100852.jpg" alt="Shampoo Day by Day 1L" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Máscara Vitamins 300g (LÊ BAIN)</div>
                         <div>
-                            <div class="product-price">R$ 135,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                            <div class="product-name">Shampoo Day by Day 1L (BEMAXX)</div>
+                            <div class="product-desc">Uso diário profissional com excelente rendimento e suavidade para os fios.</div>
                         </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/le-bain-mascara-repairing-300g.jpg" alt="Máscara Repairing 300g (LÊ BAIN)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Máscara Repairing 300g (LÊ BAIN)</div>
-                        <div>
-                            <div class="product-price">R$ 135,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-mascara-day-by-day-1l.jpg" alt="Máscara Day by Day 1L (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Máscara Day by Day 1L (BEMAXX)</div>
                         <div>
                             <div class="product-price">R$ 140,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-mascara-cachos-1l.jpg" alt="Máscara Cachos 1L (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/008b2cca-b77d-47d4-b1b1-1dbce02c5164" alt="Shampoo Cachos 1L" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Máscara Cachos 1L (BEMAXX)</div>
+                        <div>
+                            <div class="product-name">Shampoo Cachos 1L (BEMAXX)</div>
+                            <div class="product-desc">Limpeza específica para cabelos cacheados, mantendo a hidratação natural.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 150,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-mascara-regenera.jpg" alt="Máscara Regenera (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100904.jpg" alt="Shampoo Regenera" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Máscara Regenera (BEMAXX)</div>
+                        <div>
+                            <div class="product-name">Shampoo Regenera (BEMAXX)</div>
+                            <div class="product-desc">Revitaliza cabelos quimicamente danificados desde a primeira lavagem.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 150,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-mascara-nutricao-300g.jpg" alt="Máscara Nutrição 300g (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100857.jpg" alt="Shampoo Nutrição" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Máscara Nutrição 300g (BEMAXX)</div>
+                        <div>
+                            <div class="product-name">Shampoo Nutrição (BEMAXX)</div>
+                            <div class="product-desc">Nutre e limpa suavemente cabelos opacos e sem vida.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 65,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100818.jpg" alt="Shampoo Retitution Carbon 300ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Shampoo Retitution Carbon 300ml (BEMAXX)</div>
+                            <div class="product-desc">Prepara os fios com tecnologia de carbono para absorção de nutrientes.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 65,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/66c18b79-a24e-42bb-bb91-48b83f63d68e" alt="Condicionador Miracle 300ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Condicionador Miracle 300ml (TRUSS)</div>
+                            <div class="product-desc">Alto desempenho em maciez, brilho tridimensional e recuperação expressa.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 100,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORIA: MÁSCARAS DE TRATAMENTO -->
+        <div class="category">
+            <h2 class="category-title">Máscaras de Tratamento</h2>
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <img src="img/100725.jpg" alt="Máscara Curly 330g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Máscara Curly 330g (THEROS THERAPY)</div>
+                            <div class="product-desc">Hidratação intensiva para modelar, nutrir e dar definição perfeita aos cachos.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 70,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100810.jpg" alt="Máscara Naturalis Argila 500ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Máscara Naturalis Argila 500ml (THEROS THERAPY)</div>
+                            <div class="product-desc">Tratamento detox à base de argila para revitalização e balanço dos fios.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 107,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100934.jpg" alt="Máscara Manjar dos Deuses 250g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Máscara Manjar dos Deuses 250g (KAEDO)</div>
+                            <div class="product-desc">Nutrição e emoliência suprema para cabelos ressecados e sem vida.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 159,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100894.jpg" alt="Máscara Proteínas do Leite 500ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Máscara Proteínas do Leite 500ml (MIRRA)</div>
+                            <div class="product-desc">Repõe proteínas essenciais, proporcionando toque aveludado e brilho.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 130,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100898.jpg" alt="Máscara Nutrição Vegetal 500g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Máscara Nutrição Vegetal 500g (MIRRA)</div>
+                            <div class="product-desc">Nutre profundamente com ativos vegetais, combatendo o frizz e o ressecamento.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 130,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100888.jpg" alt="Máscara Queratina 500g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Máscara Queratina 500g (MIRRA)</div>
+                            <div class="product-desc">Reconstrução profunda para fios danificados por processos químicos.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 130,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100942.jpg" alt="Máscara Ginkgo Biloba 500g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Máscara Ginkgo Biloba 500g (MIRRA)</div>
+                            <div class="product-desc">Ação antioxidante e revitalizante para cabelos opacos e cansados.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 130,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100948.jpg" alt="Matizador Blue Queratina 250g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Matizador Blue Queratina 250g (MIRRA)</div>
+                            <div class="product-desc">Neutraliza tons alaranjados e reconstrói a fibra dos cabelos loiros.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 120,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100828.jpg" alt="Máscara Jojoba e Andiroba 250g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Máscara Jojoba e Andiroba 250g (MIRRA)</div>
+                            <div class="product-desc">Hidratação e redução de volume para cabelos grossos e indisciplinados.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 125,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100911.jpg" alt="Máscara Blond Absolut 200g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Máscara Blond Absolut 200g (MAISON VISAGE)</div>
+                            <div class="product-desc">Matização precisa e tratamento nutri-reconstrutor para loiros impecáveis.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 115,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100907.jpg" alt="Máscara Minerals Vitamins 200g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Máscara Minerals Vitamins 200g (MAISON VISAGE)</div>
+                            <div class="product-desc">Repõe nutrientes essenciais para restaurar a força e o brilho dos fios.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 115,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100848.jpg" alt="Máscara Ômega Complex 200g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Máscara Ômega Complex 200g (MAISON VISAGE)</div>
+                            <div class="product-desc">Nutrição profunda rica em ômegas para devolver a flexibilidade capilar.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 115,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100797.jpg" alt="Máscara Fusion Córtex 200g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Máscara Fusion Córtex 200g (MAISON VISAGE)</div>
+                            <div class="product-desc">Reconstrutora de alto desempenho para cabelos danificados por química.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 115,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100824.jpg" alt="Máscara Vitamins 300g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Máscara Vitamins 300g (LÊ BAIN)</div>
+                            <div class="product-desc">Revitaliza os fios com um complexo vitamínico de alto impacto.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 135,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100823.jpg" alt="Máscara Repairing 300g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Máscara Repairing 300g (LÊ BAIN)</div>
+                            <div class="product-desc">Reparação profunda da fibra capilar fragilizada e quebradiça.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 135,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100852.jpg" alt="Máscara Day by Day 1L" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Máscara Day by Day 1L (BEMAXX)</div>
+                            <div class="product-desc">Hidratação ágil e eficiente para o cuidado diário de qualquer tipo de cabelo.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 140,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/008b2cca-b77d-47d4-b1b1-1dbce02c5164" alt="Máscara Cachos 1L" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Máscara Cachos 1L (BEMAXX)</div>
+                            <div class="product-desc">Tratamento de salão para definição, maciez e controle de cachos volumosos.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 150,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100903.jpg" alt="Máscara Regenera" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Máscara Regenera (BEMAXX)</div>
+                            <div class="product-desc">Regeneração total dos fios danificados, devolvendo a saúde e elasticidade.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 150,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100856.jpg" alt="Máscara Nutrição 300g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Máscara Nutrição 300g (BEMAXX)</div>
+                            <div class="product-desc">Nutrição profunda para eliminar o aspecto ressecado dos cabelos.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 80,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-mascara-retitution-carbon-300g.jpg" alt="Máscara Retitution Carbon 300g (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100818.jpg" alt="Máscara Retitution Carbon 300g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Máscara Retitution Carbon 300g (BEMAXX)</div>
+                        <div>
+                            <div class="product-name">Máscara Retitution Carbon 300g (BEMAXX)</div>
+                            <div class="product-desc">Reposição carbônica que reestrutura a fibra capilar fragilizada.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 80,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-mascara-matizadora-absolut-blond-nectar-300g.jpg" alt="Máscara Matizadora Absolut Blond Néctar 300g (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100788.jpg" alt="Máscara Matizadora Absolut Blond Néctar 300g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Máscara Matizadora Absolut Blond Néctar 300g (BEMAXX)</div>
+                        <div>
+                            <div class="product-name">Máscara Matizadora Absolut Blond Néctar 300g (BEMAXX)</div>
+                            <div class="product-desc">Platinado perfeito e hidratação nutritiva para cabelos louros.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 105,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/natylla-mascara-banho-de-ouro-300g.jpg" alt="Máscara Banho de Ouro 300g (NATYLLA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/1bf93467-d8de-4f78-9d8d-71c0ae85dc2f" alt="Máscara Banho de Ouro 300g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Máscara Banho de Ouro 300g (NATYLLA)</div>
+                        <div>
+                            <div class="product-name">Máscara Banho de Ouro 300g (NATYLLA)</div>
+                            <div class="product-desc">Brilho luxuoso e hidratação radiante para todos os tipos de cabelo.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 85,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/natylla-mascara-lunatica-300g.jpg" alt="Máscara Lunática 300g (NATYLLA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100817.jpg" alt="Máscara Lunática 300g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Máscara Lunática 300g (NATYLLA)</div>
+                        <div>
+                            <div class="product-name">Máscara Lunática 300g (NATYLLA)</div>
+                            <div class="product-desc">Tratamento de alto desempenho para maciez, brilho e reestruturação.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 85,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/natylla-mascara-reposicao-de-carbono-300g.jpg" alt="Máscara Reposição de Carbono 300g (NATYLLA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/819a8539-2fc5-4490-a823-2bffb53cb739" alt="Máscara Reposição de Carbono 300g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Máscara Reposição de Carbono 300g (NATYLLA)</div>
+                        <div>
+                            <div class="product-name">Máscara Reposição de Carbono 300g (NATYLLA)</div>
+                            <div class="product-desc">Restaura a rigidez saudável e a resistência dos fios danificados.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 85,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/natylla-mascara-hidra-revit-300g.jpg" alt="Máscara Hidra Revit 300g (NATYLLA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/729a2f49-b695-4ec3-841e-99db1d5be004" alt="Máscara Hidra Revit 300g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Máscara Hidra Revit 300g (NATYLLA)</div>
+                        <div>
+                            <div class="product-name">Máscara Hidra Revit 300g (NATYLLA)</div>
+                            <div class="product-desc">Hidratação revitalizante para recuperar a umidade natural dos fios.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 85,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
@@ -1302,510 +1373,536 @@
             </div>
         </div>
 
+        <!-- CATEGORIA: FINALIZADORES, ÓLEOS E SÉRUNS -->
         <div class="category">
             <h2 class="category-title">Finalizadores, Óleos e Séruns</h2>
             <div class="product-grid">
 
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/theros-therapy-ativado-de-cachos-500ml.jpg" alt="Ativado de Cachos 500ml (THEROS THERAPY)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100835.jpg" alt="Ativador de Cachos 500ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Ativado de Cachos 500ml (THEROS THERAPY)</div>
+                        <div>
+                            <div class="product-name">Ativador de Cachos 500ml (THEROS THERAPY)</div>
+                            <div class="product-desc">Ativação duradoura dos cachos com controle rigoroso do frizz.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 115,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/theros-therapy-modelador-de-cachos-500ml.jpg" alt="Modelador de Cachos 500ml (THEROS THERAPY)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100836.jpg" alt="Modelador de Cachos 500ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Modelador de Cachos 500ml (THEROS THERAPY)</div>
+                        <div>
+                            <div class="product-name">Modelador de Cachos 500ml (THEROS THERAPY)</div>
+                            <div class="product-desc">Modela as ondas com fixação leve e movimento natural.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 115,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/theros-therapy-oleo-gloss-up-60ml.jpg" alt="Óleo Gloss UP 60ml (THEROS THERAPY)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100793.jpg" alt="Óleo Gloss UP 60ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Óleo Gloss UP 60ml (THEROS THERAPY)</div>
+                        <div>
+                            <div class="product-name">Óleo Gloss UP 60ml (THEROS THERAPY)</div>
+                            <div class="product-desc">Brilho instantâneo, toque leve e proteção contra pontas duplas.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 120,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-perfume-desert-rose-60ml.jpg" alt="Perfume Desert Rose 60ml (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100921.jpg" alt="Perfume Desert Rose 60ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Perfume Desert Rose 60ml (KAEDO)</div>
+                        <div>
+                            <div class="product-name">Perfume Desert Rose 60ml (KAEDO)</div>
+                            <div class="product-desc">Fragrância sofisticada para os cabelos com toque de frescor e brilho.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 150,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-perfume-desert-rose-15ml.jpg" alt="Perfume Desert Rose 15ml (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100927.jpg" alt="Perfume Desert Rose 15ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Perfume Desert Rose 15ml (KAEDO)</div>
+                        <div>
+                            <div class="product-name">Perfume Desert Rose 15ml (KAEDO)</div>
+                            <div class="product-desc">Versão prática para bolsa, perfumando e revitalizando os fios a qualquer hora.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 75,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-leavin-mk100-technology-hair-science-250ml.jpg" alt="Leavin Mk100 technology hair science 250ml (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100809.jpg" alt="Leavin Mk100" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Leavin Mk100 technology hair science 250ml (KAEDO)</div>
+                        <div>
+                            <div class="product-name">Leavin Mk100 technology hair science 250ml (KAEDO)</div>
+                            <div class="product-desc">Tecnologia avançada de finalização com proteção térmica e desembaraço.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 195,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-oleo-hora-de-cachear-60ml.jpg" alt="Óleo Hora de Cachear 60ml (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100926.jpg" alt="Óleo Hora de Cachear 60ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Óleo Hora de Cachear 60ml (KAEDO)</div>
+                        <div>
+                            <div class="product-name">Óleo Hora de Cachear 60ml (KAEDO)</div>
+                            <div class="product-desc">Nutrição e definição impecável para valorizar a curvatura dos cachos.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 135,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-serum-princess-hair-night-60ml.jpg" alt="Sérum Princess Hair Night 60ml (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/26eadf4c-9688-4c38-a223-206bd50c6de0" alt="Sérum Princess Hair Night 60ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Sérum Princess Hair Night 60ml (KAEDO)</div>
+                        <div>
+                            <div class="product-name">Sérum Princess Hair Night 60ml (KAEDO)</div>
+                            <div class="product-desc">Tratamento noturno que repara os fios enquanto você dorme.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 150,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-oleo-de-argan-55ml.jpg" alt="Óleo de Argan 55ml (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100918.jpg" alt="Óleo de Argan Nanooil 55ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Óleo de Argan 55ml (KAEDO)</div>
+                        <div>
+                            <div class="product-name">Óleo de Argan Nanooil 55ml (KAEDO)</div>
+                            <div class="product-desc">Ouro líquido para hidratação instantânea, controle de frizz e brilho máximo.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 145,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-calda-potencializadora-manjar-dos-deuses-30ml.jpg" alt="Calda Potencializadora Manjar dos Deuses 30ml (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100790.jpg" alt="Calda Potencializadora Manjar dos Deuses" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Calda Potencializadora Manjar dos Deuses 30ml (KAEDO)</div>
+                        <div>
+                            <div class="product-name">Calda Potencializadora Manjar dos Deuses 30ml (KAEDO)</div>
+                            <div class="product-desc">Potencializa máscaras de tratamento com gotas de pura nutrição.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 89,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-mousse.jpg" alt="Mousse (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100807.jpg" alt="Curl Solution Mousse 150ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Mousse (KAEDO)</div>
                         <div>
-                            <div class="product-price">-</div>
+                            <div class="product-name">Curl Solution Mousse 150ml (KAEDO)</div>
+                            <div class="product-desc">Volume controlado e modelagem perfeita de penteados e cachos.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 145,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-fluido-color-lock-250ml.jpg" alt="Fluído Color Lock 250ml (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100920.jpg" alt="Fluído Color Lock 250ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Fluído Color Lock 250ml (KAEDO)</div>
                         <div>
-                            <div class="product-price">R$ 165,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                            <div class="product-name">Fluído Color Lock 250ml (KAEDO)</div>
+                            <div class="product-desc">Protege a cor contra o desbotamento e doa brilho espelhado.</div>
                         </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-fluido-sunglass-250ml.jpg" alt="Fluído Sunglass 250ml (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Fluído Sunglass 250ml (KAEDO)</div>
                         <div>
                             <div class="product-price">R$ 165,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-fluido-microbioma-60ml.jpg" alt="Fluído Microbioma 60ml (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100925.jpg" alt="Fluído Sunglass 250ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Fluído Microbioma 60ml (KAEDO)</div>
                         <div>
-                            <div class="product-price">R$ 120,00</div>
+                            <div class="product-name">Fluído Sunglass 250ml (KAEDO)</div>
+                            <div class="product-desc">Proteção solar capilar avançada contra raios UV e ressecamento.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 165,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-leavin-proteinas-do-leite-180g.jpg" alt="Leavin Proteínas do Leite 180g (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100894.jpg" alt="Leavin Proteínas do Leite 180g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Leavin Proteínas do Leite 180g (MIRRA)</div>
                         <div>
-                            <div class="product-price">R$ 75,00</div>
-                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                            <div class="product-name">Leavin Proteínas do Leite 180g (MIRRA)</div>
+                            <div class="product-desc">Finalizador proteico que desembaraça e protege contra agressões diárias.</div>
                         </div>
-                    </div>
-                </div>
-        
-                <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-leavin-nutricao-vegetal-180g.jpg" alt="Leavin Nutrição Vegetal 180g (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
-                    <div class="product-info">
-                        <div class="product-name">Leavin Nutrição Vegetal 180g (MIRRA)</div>
                         <div>
                             <div class="product-price">R$ 75,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-leavin-queratina-180g.jpg" alt="Leavin Queratina 180g (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100899.jpg" alt="Leavin Nutrição Vegetal 180g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Leavin Queratina 180g (MIRRA)</div>
+                        <div>
+                            <div class="product-name">Leavin Nutrição Vegetal 180g (MIRRA)</div>
+                            <div class="product-desc">Hidratação sem enxágue com óleos vegetais para controle do frizz.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 75,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-leavin-ginkgo-biloba-180g.jpg" alt="Leavin Ginkgo Biloba 180g (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100889.jpg" alt="Leavin Queratina 180g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Leavin Ginkgo Biloba 180g (MIRRA)</div>
+                        <div>
+                            <div class="product-name">Leavin Queratina 180g (MIRRA)</div>
+                            <div class="product-desc">Finalizador reconstrutor que protege e fortalece a fibra capilar.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 75,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-leavin-jojoba-e-andiroba-180g.jpg" alt="Leavin Jojoba e Andiroba 180g (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100945.jpg" alt="Leavin Ginkgo Biloba 180g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Leavin Jojoba e Andiroba 180g (MIRRA)</div>
+                        <div>
+                            <div class="product-name">Leavin Ginkgo Biloba 180g (MIRRA)</div>
+                            <div class="product-desc">Ação antioxidante e proteção diária para cabelos com química.</div>
+                        </div>
+                        <div>
+                            <div class="product-price">R$ 75,00</div>
+                            <a href="#" class="btn-interest">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/100830.jpg" alt="Leavin Jojoba e Andiroba 180g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
+                    <div class="product-info">
+                        <div>
+                            <div class="product-name">Leavin Jojoba e Andiroba 180g (MIRRA)</div>
+                            <div class="product-desc">Disciplina fios rebeldes e volumosos com toque sedoso.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 95,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-oleo-elixir-gold-30ml.jpg" alt="Óleo Elixir Gold 30ml (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/ae4f3cc8-791e-4923-8484-b3ef155198b4" alt="Óleo Elixir Gold 30ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Óleo Elixir Gold 30ml (MIRRA)</div>
+                        <div>
+                            <div class="product-name">Óleo Elixir Gold 30ml (MIRRA)</div>
+                            <div class="product-desc">Sérum precioso para brilho radiante e eliminação de frizz.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 85,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-oleo-argan-oil-30ml.jpg" alt="Óleo Argan Oil 30ml (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100867.jpg" alt="Óleo Argan Oil 30ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Óleo Argan Oil 30ml (MIRRA)</div>
+                        <div>
+                            <div class="product-name">Óleo Argan Oil 30ml (MIRRA)</div>
+                            <div class="product-desc">Reparação expressa e nutrição leve com puro óleo de argan.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 85,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-oleo-bio-elixir-30ml.jpg" alt="Óleo Bio Elixir 30ml (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100931.jpg" alt="Óleo Bio Elixir 30ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Óleo Bio Elixir 30ml (MIRRA)</div>
+                        <div>
+                            <div class="product-name">Óleo Bio Elixir 30ml (MIRRA)</div>
+                            <div class="product-desc">Blend de óleos nobres para nutrição e proteção antifrizz imediata.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 85,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-leavin-blond-absolut-140ml.jpg" alt="Leavin Blond Absolut 140ml (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100912.jpg" alt="Leavin Blond Absolut 140ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Leavin Blond Absolut 140ml (MAISON VISAGE)</div>
+                        <div>
+                            <div class="product-name">Leavin Blond Absolut 140ml (MAISON VISAGE)</div>
+                            <div class="product-desc">Finalizador desamarelador com proteção térmica para cabelos loiros.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 100,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-leavin-minerals-vitamins-140ml.jpg" alt="Leavin Minerals Vitamins 140ml (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100908.jpg" alt="Leavin Minerals Vitamins 140ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Leavin Minerals Vitamins 140ml (MAISON VISAGE)</div>
+                        <div>
+                            <div class="product-name">Leavin Minerals Vitamins 140ml (MAISON VISAGE)</div>
+                            <div class="product-desc">Proteção diária enriquecida com minerais e vitaminas essenciais.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 100,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-leavin-omega-complex-140ml.jpg" alt="Leavin Ômega Complex 140ml (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100949.jpg" alt="Leavin Ômega Complex 140ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Leavin Ômega Complex 140ml (MAISON VISAGE)</div>
+                        <div>
+                            <div class="product-name">Leavin Ômega Complex 140ml (MAISON VISAGE)</div>
+                            <div class="product-desc">Nutre e protege contra o ressecamento diário com ácidos graxos.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 100,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/maison-visage-leavin-fusion-cortex-140ml.jpg" alt="Leavin Fusion Córtex 140ml (MAISON VISAGE)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100797.jpg" alt="Leavin Fusion Córtex 140ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Leavin Fusion Córtex 140ml (MAISON VISAGE)</div>
+                        <div>
+                            <div class="product-name">Leavin Fusion Córtex 140ml (MAISON VISAGE)</div>
+                            <div class="product-desc">Finalizador reconstrutor que sela as pontas e protege do calor.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 100,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/le-bain-leavin-vitamins-170ml.jpg" alt="Leavin Vitamins 170ml (LÊ BAIN)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100825.jpg" alt="Leavin Vitamins 170ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Leavin Vitamins 170ml (LÊ BAIN)</div>
+                        <div>
+                            <div class="product-name">Leavin Vitamins 170ml (LÊ BAIN)</div>
+                            <div class="product-desc">Creme para pentear vitamínico que fortalece e desembaraça.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 115,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/le-bain-leavin-repairing-170ml.jpg" alt="Leavin Repairing 170ml (LÊ BAIN)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100823.jpg" alt="Leavin Repairing 170ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Leavin Repairing 170ml (LÊ BAIN)</div>
+                        <div>
+                            <div class="product-name">Leavin Repairing 170ml (LÊ BAIN)</div>
+                            <div class="product-desc">Repara pontas duplas e protege contra o calor do secador e chapinha.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 115,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-defriz-time-260ml.jpg" alt="Defriz Time 260ml (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/e04983b0-b39d-4f41-a85f-110e7d44d285" alt="Defriz Time 260ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Defriz Time 260ml (BEMAXX)</div>
+                        <div>
+                            <div class="product-name">Defriz Time 260ml (BEMAXX)</div>
+                            <div class="product-desc">Ativo termoprotetor para escova lisa perfeita e livre de frizz.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 140,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-perfume-for-my-hair-60ml.jpg" alt="Perfume for my hair 60ml (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100794.jpg" alt="Perfume for my hair 60ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Perfume for my hair 60ml (BEMAXX)</div>
+                        <div>
+                            <div class="product-name">Perfume for my hair 60ml (BEMAXX)</div>
+                            <div class="product-desc">Neutraliza odores e perfuma delicadamente as madeixas.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 140,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-reparador-de-pontas-for-my-hair-60ml.jpg" alt="Reparador de pontas for my hair 60ml (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100792.jpg" alt="Reparador de pontas for my hair 60ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Reparador de pontas for my hair 60ml (BEMAXX)</div>
+                        <div>
+                            <div class="product-name">Reparador de pontas for my hair 60ml (BEMAXX)</div>
+                            <div class="product-desc">Sela pontas espigadas e confere acabamento luminoso.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 130,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-cristall-repair-nectar-30ml.jpg" alt="Cristall Repair Néctar 30ml (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100791.jpg" alt="Cristall Repair Néctar 30ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Cristall Repair Néctar 30ml (BEMAXX)</div>
+                        <div>
+                            <div class="product-name">Cristall Repair Néctar 30ml (BEMAXX)</div>
+                            <div class="product-desc">Gotas de cristalização para reparação extrema de áreas sensibilizadas.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 75,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-leavin-nutricao-300ml.jpg" alt="Leavin Nutrição 300ml (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100856.jpg" alt="Leavin Nutrição 300ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Leavin Nutrição 300ml (BEMAXX)</div>
+                        <div>
+                            <div class="product-name">Leavin Nutrição 300ml (BEMAXX)</div>
+                            <div class="product-desc">Creme nutritivo sem enxágue para controle de frizz e maciez.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 65,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-leavin-retitution-carbon-300ml.jpg" alt="Leavin Retitution Carbon 300ml (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100818.jpg" alt="Leavin Retitution Carbon 300ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Leavin Retitution Carbon 300ml (BEMAXX)</div>
+                        <div>
+                            <div class="product-name">Leavin Retitution Carbon 300ml (BEMAXX)</div>
+                            <div class="product-desc">Finalizador com carbono para proteção e alinhamento da fibra.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 65,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/natylla-leavin-reposicao-de-carbono-300ml.jpg" alt="Leavin Reposição de Carbono 300ml (NATYLLA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100847.jpg" alt="Leavin Reposição de Carbono 300ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Leavin Reposição de Carbono 300ml (NATYLLA)</div>
+                        <div>
+                            <div class="product-name">Leavin Reposição de Carbono 300ml (NATYLLA)</div>
+                            <div class="product-desc">Repõe massa e energia para cabelos opacos e quimicamente tratados.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 75,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/natylla-leavin-hidra-revit-300ml.jpg" alt="Leavin Hidra Revit 300ml (NATYLLA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100844.jpg" alt="Leavin Hidra Revit 300ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Leavin Hidra Revit 300ml (NATYLLA)</div>
+                        <div>
+                            <div class="product-name">Leavin Hidra Revit 300ml (NATYLLA)</div>
+                            <div class="product-desc">Hidratação leve para desembaraçar e revitalizar o penteado.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 75,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/hoka-oleo-hoka-poliplus-30ml.jpg" alt="Óleo Hoka Poliplus 30ml (HOKA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100798.jpg" alt="Óleo Hoka Poliplus 30ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Óleo Hoka Poliplus 30ml (HOKA)</div>
+                        <div>
+                            <div class="product-name">Óleo Hoka Poliplus 30ml (HOKA)</div>
+                            <div class="product-desc">Sérum multifuncional para proteção e brilho espelhado.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 80,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/truss-uso-obrigatorio-260ml.jpg" alt="Uso Obrigatório 260ml (TRUSS)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100784.jpg" alt="Uso Obrigatório 260ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Uso Obrigatório 260ml (TRUSS)</div>
+                        <div>
+                            <div class="product-name">Uso Obrigatório 260ml (TRUSS)</div>
+                            <div class="product-desc">Recupera o cabelo danificado, reconstrói os fios e protege contra quebra.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 118,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/truss-night-spa-250ml.jpg" alt="Night SPA 250ml (TRUSS)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100950.webp" alt="Night SPA 250ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Night SPA 250ml (TRUSS)</div>
+                        <div>
+                            <div class="product-name">Night SPA 250ml (TRUSS)</div>
+                            <div class="product-desc">Sérum de tratamento noturno para hidratação profunda e selagem imediata.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 152,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
@@ -1815,146 +1912,158 @@
             </div>
         </div>
 
+        <!-- CATEGORIA: OUTROS TRATAMENTOS -->
         <div class="category">
             <h2 class="category-title">Outros Tratamentos</h2>
             <div class="product-grid">
 
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/theros-therapy-tonico-capilar-argila-100ml.jpg" alt="Tônico capilar Argila 100ml (THEROS THERAPY)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100814.jpg" alt="Tônico capilar Argila 100ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Tônico capilar Argila 100ml (THEROS THERAPY)</div>
+                        <div>
+                            <div class="product-name">Tônico capilar Argila 100ml (THEROS THERAPY)</div>
+                            <div class="product-desc">Estimula o couro cabeludo e fortalece a raiz dos cabelos.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 85,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-curl-solution-150ml.jpg" alt="Curl Solution 150ml (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100807.jpg" alt="Curl Solution 150ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Curl Solution 150ml (KAEDO)</div>
+                        <div>
+                            <div class="product-name">Curl Solution Mousse 150ml (KAEDO)</div>
+                            <div class="product-desc">Solução líquida modeladora para cachos definidos e sem frizz.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 145,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-american-liss-250ml.jpg" alt="American Liss 250ml (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100808.jpg" alt="American Liss 250ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">American Liss 250ml (KAEDO)</div>
+                        <div>
+                            <div class="product-name">American Liss 250ml (KAEDO)</div>
+                            <div class="product-desc">Alinhamento térmico para redução de volume e efeito ultra liso.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 195,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-solution-60ml.jpg" alt="Solution 60ml (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100929.jpg" alt="Solution 60ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Solution 60ml (KAEDO)</div>
+                        <div>
+                            <div class="product-name">Mega Solution 60ml (KAEDO)</div>
+                            <div class="product-desc">Solução concentrada para cuidados específicos da fibra capilar.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 150,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-mega.jpg" alt="Mega (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/kaedo-mega.jpg" alt="Mega" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Mega (KAEDO)</div>
+                        <div>
+                            <div class="product-name">Mega (KAEDO)</div>
+                            <div class="product-desc">Tratamento de alto desempenho profissional.</div>
+                        </div>
                         <div>
                             <div class="product-price">-</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-nanooil.jpg" alt="Nanooil (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/kaedo-nanooil.jpg" alt="Nanooil" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Nanooil (KAEDO)</div>
+                        <div>
+                            <div class="product-name">Nanooil (KAEDO)</div>
+                            <div class="product-desc">Tecnologia nano para nutrição profunda e rápida absorção.</div>
+                        </div>
                         <div>
                             <div class="product-price">-</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/kaedo-potencializador-carta-na-manga-250ml.jpg" alt="Potencializador Carta na Manga 250ml (KAEDO)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100785.jpg" alt="Potencializador Carta na Manga 250ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Potencializador Carta na Manga 250ml (KAEDO)</div>
+                        <div>
+                            <div class="product-name">Potencializador Carta na Manga 250ml (KAEDO)</div>
+                            <div class="product-desc">Aumenta a eficácia de qualquer protocolo de tratamento no salão.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 165,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/mirra-intensificador-de-brilho-120ml.jpg" alt="Intensificador de Brilho 120ml (MIRRA)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100800.jpg" alt="Intensificador de Brilho 120ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Intensificador de Brilho 120ml (MIRRA)</div>
+                        <div>
+                            <div class="product-name">Intensificador de Brilho 120ml (MIRRA)</div>
+                            <div class="product-desc">Finalizador leve que proporciona brilho tridimensional imediato.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 110,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-magic-cream-260ml.jpg" alt="Magic Cream 260ml (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100783.jpg" alt="Magic Cream 260ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Magic Cream 260ml (BEMAXX)</div>
+                        <div>
+                            <div class="product-name">Magic Cream 260ml (BEMAXX)</div>
+                            <div class="product-desc">Creme multifuncional de alto impacto para reestruturação relâmpago.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 145,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/bemaxx-ampola-nectar-magic-20ml.jpg" alt="Ampola Néctar Magic 20ml (BEMAXX)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100796.jpg" alt="Ampola Néctar Magic 20ml" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Ampola Néctar Magic 20ml (BEMAXX)</div>
+                        <div>
+                            <div class="product-name">Ampola Néctar Magic 20ml (BEMAXX)</div>
+                            <div class="product-desc">Dose concentrada de hidratação e brilho instantâneo.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 50,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="product-card">
-                    <!-- AQUI ENTRA A IMAGEM. O "src" aponta para a pasta img/ -->
-                    <img src="img/variadas-acai-care-300g.jpg" alt="Açaí Care 300g (VARIADAS)" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
-                    
+                    <img src="img/100883.jpg" alt="Açaí Care 300g" class="product-image" onerror="this.src='https://via.placeholder.com/300x300/222222/d4af37?text=Sem+Foto'">
                     <div class="product-info">
-                        <div class="product-name">Açaí Care 300g (VARIADAS)</div>
+                        <div>
+                            <div class="product-name">Açaí Care 300g (VARIADAS)</div>
+                            <div class="product-desc">Antioxidante poderoso com extrato de açaí para recuperação e vitalidade.</div>
+                        </div>
                         <div>
                             <div class="product-price">R$ 84,00</div>
                             <a href="#" class="btn-interest">Ver Detalhes</a>
